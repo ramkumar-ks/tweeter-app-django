@@ -70,5 +70,6 @@ class Timeline(APIView):
                 "comments": t.comments,
                 "created_at": t.created_at
             })
+        print(tweets)
         return Response({'tweets': data})
 
